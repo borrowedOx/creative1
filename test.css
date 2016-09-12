@@ -1,0 +1,137 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: "Kohinoor Telugu Light";
+}
+
+h1 {
+	font-size: 169%
+}
+
+p {
+	font-size: 100%;
+	line-height: 150%;
+	color: #241112;
+	font-family: "Abadi MT Condensed Light";
+	font-style: normal;
+	font-weight: 400;
+}
+
+.slide {
+  position: relative;
+  padding: 2vh 35px;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+.image {
+	position: absolute;
+	top: 50%;
+	right: 35%;
+	width: 320px;
+	height: 240px;
+	transform: translateZ(.25px) scale(.75) translateX(90%) translateY(-120%) rotate(2deg);
+	padding: 10px;
+	border-radius: 5px;
+	background-color: rgba(90,90,92,0.69);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.image:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(75%) translateY(-40%) rotate(-2deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+	width: 50%;
+	border-radius: 5px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+	background-color: rgba(16,38,74,1.00);
+	color: rgba(174,198,237,1.00);
+	font-family: "Acumin Pro ExtraCondensed", "Acumin Pro ExtraCondensed Light", "Acumin Pro ExtraCondensed Thin";
+	padding-left: 27px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 137%;
+}
+#menu_bar {
+	position: static;
+	background-color: rgba(16,38,74,1.00);
+	width: 100%;
+	padding: 1px 35px;
+	left: 0;
+	top: 0;
+	color: rgba(255,255,255,1.00);
+	font-size: 175%;
+	font-family: "Acumin Pro ExtraCondensed", "Acumin Pro ExtraCondensed Light", "Acumin Pro ExtraCondensed Thin";
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+	text-align: left;
+	font-size: 200%;
+	color: #fff;
+	background-image: url(images/code.png);
+	background-attachment: fixed;
+}
+
+#title {
+}
+
+#slide1:before {
+	background-image: url(images/megaputer.png);
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+}
+
+#slide2 {
+	background-color: rgba(184,184,184,1.00);
+	background-attachment: fixed;
+}
+
+#slide3:before {
+	background-image: url(images/website.png);
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+}
+
+#slide4 {
+	background-color: grey;  
+}
+.title p {
+	color: white;
+}
